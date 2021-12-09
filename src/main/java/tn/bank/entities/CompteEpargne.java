@@ -14,7 +14,7 @@ public CompteEpargne() {
 	// TODO Auto-generated constructor stub
 }
 
-public CompteEpargne(String codeCompte, Date dateCreation, double solde, Client client, double taux) {
+public CompteEpargne(Long codeCompte, Date dateCreation, double solde, Client client, double taux) {
 	super(codeCompte, dateCreation, solde, client);
 	this.taux = taux;
 }

@@ -16,7 +16,7 @@ public CompteCourant() {
 }
 
 
-public CompteCourant(String codeCompte, Date dateCreation, double solde, Client client, double decouvert) {
+public CompteCourant(Long codeCompte, Date dateCreation, double solde, Client client, double decouvert) {
 	super(codeCompte, dateCreation, solde, client);
 	this.decouvert = decouvert;
 }

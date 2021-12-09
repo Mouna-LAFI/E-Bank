@@ -7,6 +7,7 @@ import java.util.Date;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -17,8 +18,8 @@ import javax.persistence.OneToMany;
 @Inheritance (strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="TYPE_CPTE",discriminatorType=DiscriminatorType.STRING,length=2)
 public abstract class Compte implements Serializable {
-	@Id
-	private String codeCompte;
+	@Id @GeneratedValue
+	private Long codeCompte;
 	private Date dateCreation;
 	private double solde;
 	@ManyToOne
@@ -30,17 +31,17 @@ public abstract class Compte implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Compte(String codeCompte, Date dateCreation, double solde, Client client) {
+	public Compte(Long codeCompte, Date dateCreation, double solde, Client client) {
 		super();
 		this.codeCompte = codeCompte;
 		this.dateCreation = dateCreation;
 		this.solde = solde;
 		this.client = client;
 	}
-	public String getCodeCompte() {
+	public Long getCodeCompte() {
 		return codeCompte;
 	}
-	public void setCodeCompte(String codeCompte) {
+	public void setCodeCompte(Long codeCompte) {
 		this.codeCompte = codeCompte;
 	}
 	public Date getDateCreation() {

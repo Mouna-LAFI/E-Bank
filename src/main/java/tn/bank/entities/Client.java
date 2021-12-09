@@ -13,8 +13,9 @@ public class Client implements Serializable{
 	
  
 @Id @GeneratedValue
-private String nom;
+
 private Long code;
+private String nom;
 private String email;
 @OneToMany (mappedBy="client", fetch=FetchType.LAZY)
 private Collection <Compte> comptes;
