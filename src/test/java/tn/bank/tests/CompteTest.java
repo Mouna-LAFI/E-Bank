@@ -1,4 +1,4 @@
-package tn.bank;
+package tn.bank.tests;
 
 import static org.junit.Assert.assertTrue;
 

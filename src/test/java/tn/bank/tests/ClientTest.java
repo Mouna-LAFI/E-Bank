@@ -1,4 +1,4 @@
-package tn.bank;
+package tn.bank.tests;
 import static org.junit.Assert.assertTrue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
