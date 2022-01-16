@@ -11,7 +11,6 @@ private double taux;
 
 public CompteEpargne() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 
 public CompteEpargne(Long codeCompte, Date dateCreation, double solde, Client client, double taux) {

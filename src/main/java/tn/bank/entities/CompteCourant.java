@@ -12,7 +12,6 @@ private double decouvert;
 
 public CompteCourant() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 
 
@@ -20,7 +19,6 @@ public CompteCourant(Long codeCompte, Date dateCreation, double solde, Client cl
 	super(codeCompte, dateCreation, solde, client);
 	this.decouvert = decouvert;
 }
-
 
 public double getDecouvert() {
 	return decouvert;

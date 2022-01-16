@@ -22,7 +22,6 @@ private Collection <Compte> comptes;
 
 public Client() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 public Client(String nom, String email) {
 	super();

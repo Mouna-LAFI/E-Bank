@@ -27,6 +27,7 @@ public abstract class Compte implements Serializable {
 	private Client client;
 	@OneToMany(mappedBy="compte")
 	private Collection<Operation> operations;
+	
 	public Compte() {
 		super();
 		// TODO Auto-generated constructor stub
